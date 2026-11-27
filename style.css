@@ -1,0 +1,853 @@
+
+/* =========================
+   MAZARO - GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0A0A0A;
+    color: #F3EFE6;
+    direction: rtl;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    color: #C9A24B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F3EFE6;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+
+header {
+    background: #0A0A0A;
+    color: #F3EFE6;
+    padding: 25px 15px;
+    text-align: center;
+    border-bottom: 1px solid #2C2C2C;
+}
+
+header h1 {
+    font-size: 34px;
+    letter-spacing: 5px;
+    color: #C9A24B;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+nav a,
+nav a:visited {
+    color: #F3EFE6;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #C9A24B;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #C9A24B;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #A8A296;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* =========================
+   COLLECTIONS
+========================= */
+
+#collections {
+    width: 100%;
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+#collections h2 {
+    color: #C9A24B;
+    font-size: 34px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+#collections > .arabic-subtitle {
+    color: #A8A296;
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+.collection-card {
+    width: 100%;
+    max-width: 580px;
+    margin: 25px auto;
+    padding: 35px 20px;
+    background: #141414;
+    border: 1px solid #C9A24B;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.collection-card:hover {
+    border-color: #E0BD68;
+    transform: translateY(-4px);
+}
+
+.collection-card h3 {
+    color: #C9A24B;
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.collection-card p {
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+.collection-card .arabic-title {
+    color: #F3EFE6;
+    font-size: 21px;
+}
+
+.collection-card .arabic-subtitle {
+    color: #A8A296;
+    font-size: 17px;
+}
+
+.collection-card a {
+    display: inline-block;
+    background: #C9A24B;
+    color: #0A0A0A !important;
+    padding: 13px 28px;
+    margin-top: 18px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.collection-card a:hover {
+    background: #E0BD68;
+    color: #0A0A0A !important;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.product-card {
+    max-width: 420px;
+    margin: 30px auto;
+    background: #141414;
+    border: 1px solid #2C2C2C;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    display: block;
+}
+
+.product-info {
+    padding: 22px 15px;
+}
+
+.collection-name {
+    color: #C9A24B;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.product-info h3 {
+    color: #F3EFE6;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: #A8A296;
+}
+
+.sizes {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.product-info label {
+    display: block;
+    color: #C9A24B;
+    margin: 15px 0 8px;
+}
+
+.product-info select {
+    background: #0A0A0A;
+    color: #F3EFE6;
+    border: 1px solid #C9A24B;
+    padding: 12px;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    cursor: pointer;
+    background: #C9A24B;
+    color: #0A0A0A;
+    border: none;
+    padding: 12px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.order-btn {
+    display: inline-block;
+    background: #C9A24B;
+    color: #0A0A0A !important;
+    padding: 12px 30px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0A0A0A;
+    color: #F3EFE6;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 1px solid #2C2C2C;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    #collections {
+        margin: 25px auto;
+        padding: 20px 15px;
+    }
+
+    #collections h2 {
+        font-size: 27px;
+    }
+
+    .collection-card {
+        padding: 28px 15px;
+    }
+
+    .collection-card h3 {
+        font-size: 22px;
+    }
+
+    .collection-card .arabic-title {
+        font-size: 19px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+
+/* =========================
+   MAZARO HERO SECTION
+========================= */
+
+#home {
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #141414,
+        #0A0A0A,
+        #1C1710
+    );
+    border-bottom: 1px solid #2C2C2C;
+}
+
+#home h2 {
+    font-size: 42px;
+    letter-spacing: 5px;
+    color: #C9A24B;
+    margin-bottom: 15px;
+}
+
+#home p {
+    color: #F3EFE6;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    #home {
+        min-height: 260px;
+    }
+
+    #home h2 {
+        font-size: 34px;
+    }
+
+    #home p {
+        font-size: 17px;
+    }
+}
+
+/* MAZARO HERO SECTION */
+
+#home {
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #141414,
+        #0A0A0A,
+        #1C1710
+    );
+    border-bottom: 1px solid #2C2C2C;
+}
+
+#home h2 {
+    font-size: 42px;
+    letter-spacing: 5px;
+    color: #C9A24B;
+    margin-bottom: 15px;
+}
+
+#home p {
+    color: #F3EFE6;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    #home {
+        min-height: 260px;
+    }
+
+    #home h2 {
+        font-size: 34px;
+    }
+
+    #home p {
+        font-size: 17px;
+    }
+}
+
+/* =========================
+   LUXURY COLLECTION CARDS
+========================= */
+
+.collection-card {
+    position: relative;
+    background: linear-gradient(
+        145deg,
+        #191919,
+        #101010
+    );
+    border: 1px solid #3A3020;
+    border-radius: 12px;
+    padding: 45px 25px;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.collection-card:hover {
+    transform: translateY(-8px);
+    border-color: #C9A24B;
+    box-shadow: 0 12px 30px rgba(201, 162, 75, 0.12);
+}
+
+.collection-card h3 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.collection-card a {
+    border: 1px solid #C9A24B;
+    transition: all 0.3s ease;
+}
+
+.collection-card a:hover {
+    background: transparent;
+    color: #C9A24B !important;
+    transform: scale(1.05);
+}
+
+/* =========================
+   MAZARO PRODUCT CARDS
+========================= */
+
+.product-card {
+    max-width: 450px;
+    margin: 40px auto;
+    background: linear-gradient(
+        145deg,
+        #191919,
+        #101010
+    );
+    border: 1px solid #3A3020;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    border-color: #C9A24B;
+    box-shadow: 0 12px 30px rgba(201, 162, 75, 0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 430px;
+    object-fit: contain;
+    background: #111111;
+    padding: 12px;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.03);
+}
+
+.product-info {
+    padding: 28px 20px;
+}
+
+.product-info h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.product-info select {
+    width: 90%;
+    max-width: 300px;
+    cursor: pointer;
+    outline: none;
+}
+
+.product-info select:focus {
+    border-color: #E0BD68;
+    box-shadow: 0 0 8px rgba(201, 162, 75, 0.2);
+}
+
+/* PRODUCT BUTTON */
+
+.product-info button {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto 0;
+    padding: 14px;
+    background: #C9A24B;
+    color: #0A0A0A;
+    border: 1px solid #C9A24B;
+    border-radius: 5px;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.product-info button:hover {
+    background: transparent;
+    color: #C9A24B;
+}
+
+/* MOBILE PRODUCTS */
+
+@media (max-width: 600px) {
+    .product-card {
+        margin: 25px auto;
+    }
+
+    .product-card img {
+        height: 350px;
+    }
+
+    .product-info {
+        padding: 22px 15px;
+    }
+}
+
+/* =========================
+   COLLECTION PAGE HEADER
+========================= */
+
+.collection-header {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px 15px;
+    background: linear-gradient(
+        135deg,
+        #191919,
+        #0A0A0A,
+        #1C1710
+    );
+    border-bottom: 1px solid #3A3020;
+}
+
+.collection-header h1 {
+    color: #C9A24B;
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.collection-header p {
+    color: #F3EFE6;
+    font-size: 19px;
+    margin: 5px 0;
+}
+
+.collection-header .arabic-subtitle {
+    color: #A8A296;
+    font-size: 17px;
+}
+
+@media (max-width: 600px) {
+    .collection-header {
+        min-height: 240px;
+    }
+
+    .collection-header h1 {
+        font-size: 27px;
+    }
+}
+
+/* MAZARO PRODUCT PRICE */
+
+.product-price {
+    color: #C9A24B !important;
+    font-size: 25px !important;
+    font-weight: bold;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   MAZARO LUXURY CART
+========================= */
+
+.cart-toggle {
+    background: #C9A24B;
+    color: #0A0A0A;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#cart-count {
+    background: #0A0A0A;
+    color: #C9A24B;
+    padding: 3px 7px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* CART DRAWER */
+
+.cart-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 650px;
+    max-width: 100%;
+    height: 100vh;
+    background: #0A0A0A;
+    color: #F3EFE6;
+    z-index: 9999;
+    padding: 25px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-left: 1px solid #C9A24B;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    visibility: hidden;
+}
+
+.cart-drawer.active {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+/* CART HEADER */
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C9A24B;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.cart-header h2 {
+    color: #C9A24B;
+    letter-spacing: 3px;
+}
+
+.cart-header p {
+    color: #A8A296;
+}
+
+.cart-header button {
+    background: transparent;
+    color: #C9A24B;
+    border: 1px solid #C9A24B;
+    padding: 8px 13px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* CART TABLE */
+
+.cart-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 540px;
+    text-align: center;
+}
+
+.cart-table th {
+    color: #C9A24B;
+    background: #141414;
+    padding: 14px 8px;
+    border-bottom: 1px solid #C9A24B;
+}
+
+.cart-table td {
+    padding: 15px 8px;
+    border-bottom: 1px solid #2C2C2C;
+    color: #F3EFE6;
+}
+
+.cart-table button {
+    background: #141414;
+    color: #C9A24B;
+    border: 1px solid #C9A24B;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+/* CART SUMMARY */
+
+.cart-summary {
+    margin-top: 35px;
+    padding: 25px;
+    background: #141414;
+    border: 1px solid #2C2C2C;
+    text-align: center;
+}
+
+.cart-summary p {
+    color: #A8A296;
+}
+
+.cart-summary h2 {
+    color: #C9A24B;
+    font-size: 28px;
+}
+
+.cart-summary button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    background: #C9A24B;
+    color: #0A0A0A;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-summary button:hover {
+    background: #F3EFE6;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .cart-drawer {
+        width: 100%;
+        padding: 18px 12px;
+    }
+
+    .cart-header h2 {
+        font-size: 21px;
+    }
+
+    .cart-summary {
+        padding: 18px;
+    }
+}
+
+/* MAZARO CART OVERLAY */
+
+#cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+}
+
+#cart-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* CART ANIMATION */
+
+.cart-drawer {
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+}
+
+/* CUSTOMER DETAILS */
+
+.customer-details {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.customer-details h3 {
+    color: #C9A24B;
+    letter-spacing: 2px;
+}
+
+.customer-details p {
+    color: #A8A296;
+}
+
+.customer-details input,
+.customer-details textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 8px 0;
+    background: #141414;
+    color: #F3EFE6;
+    border: 1px solid #2C2C2C;
+    outline: none;
+    font-size: 15px;
+}
+
+.customer-details input:focus,
+.customer-details textarea:focus {
+    border-color: #C9A24B;
+}
+
+.customer-details textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+/* CLEAR CART BUTTON */
+
+.clear-cart-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    background: transparent;
+    color: #C9A24B;
+    border: 1px solid #C9A24B;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.clear-cart-btn:hover {
+    background: #C9A24B;
+    color: #0A0A0A;
+}

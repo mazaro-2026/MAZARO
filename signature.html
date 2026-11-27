@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAZARO SIGNATURE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="index.html#about">عن MAZARO</a>
+    <a href="index.html#contact">تواصل معنا</a>
+    
+<button type="button" class="cart-toggle" onclick="toggleCart()">
+    🛒
+    <span id="cart-count">0</span>
+</button>
+
+</nav>
+
+<header class="collection-header">
+    <h1>MAZARO SIGNATURE</h1>
+    <p>Designed to Stand Out</p>
+    <p class="arabic-subtitle">تصميم يلفت الأنظار</p>
+</header>
+
+<section id="products">
+    <h2>OUR PRODUCTS</h2>
+    <p class="arabic-subtitle">منتجات المجموعة</p>
+     <div class="product-card">
+      <img src="images/burgundy.png" alt="قميص MAZAROالنبيتي">
+     <div class="product-info">
+       <h3>MAZARO SIGNATURE</h3>
+       <p>اكتشف أحدث تصميماتنا</p>
+       <p class="product-price">499 EGP</p>
+<label for="shirt-size">اختر مقاسك:</label>
+
+<select id="shirt-size" name="size">
+    <option value="">اختر المقاس</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+    <option value="3XL">3XL</option>
+    <option value="4XL">4XL</option>
+</select>
+       
+<button type="button" onclick="addToCart('القميص النبيتي', 'shirt-size')">
+    أضف إلى السلة
+</button>
+     </div>
+     </div>
+     
+<div class="product-card">
+
+    <img src="images/black-grey.png"
+         alt="قميص MAZARO الأسود والرصاصي">
+
+    <div class="product-info">
+
+        <p class="collection-name">
+            MAZARO SIGNATURE
+        </p>
+
+        <h3>القميص الأسود</h3>
+
+        <p>أسود بتطعيم رصاصي</p>
+<p class="product-price">499 EGP</p>
+        <label for="black-size">
+            اختر مقاسك:
+        </label>
+
+        <select id="black-size">
+            <option value="">اختر المقاس</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+            <option value="3XL">3XL</option>
+            <option value="4XL">4XL</option>
+        </select>
+
+        
+<button type="button" onclick="addToCart('القميص الأسود والرصاصي', 'black-size')">
+    أضف إلى السلة
+</button>
+
+    </div>
+
+</div>
+   </section>
+   
+<div id="cart-overlay" onclick="toggleCart()"></div>
+
+<section id="cart" class="cart-drawer">
+
+    <div class="cart-header">
+        <div>
+            <h2>YOUR BAG</h2>
+            <p>حقيبة مشترياتك من MAZARO</p>
+        </div>
+
+        <button type="button" onclick="toggleCart()">✕</button>
+    </div>
+
+    <div class="cart-table-wrapper">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>المنتج</th>
+                    <th>المقاس</th>
+                    <th>السعر</th>
+                    <th>الكمية</th>
+                    <th>الإجمالي</th>
+                    <th>حذف</th>
+                </tr>
+            </thead>
+
+            <tbody id="cart-items">
+                <tr>
+                    <td colspan="6">حقيبتك فارغة حالياً</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="cart-summary">
+        <p>إجمالي الطلب</p>
+        <h2><span id="cart-total">0</span> EGP</h2>
+
+<div class="customer-details">
+
+    <h3>DELIVERY DETAILS</h3>
+    <p>بيانات التوصيل</p>
+
+    <input
+        type="text"
+        id="customer-name"
+        placeholder="الاسم بالكامل"
+    >
+
+    <input
+        type="tel"
+        id="customer-phone"
+        placeholder="رقم الهاتف"
+    >
+
+    <input
+        type="text"
+        id="customer-address"
+        placeholder="العنوان بالتفصيل"
+    >
+
+    <textarea
+        id="customer-notes"
+        placeholder="ملاحظات إضافية (اختياري)"
+    ></textarea>
+
+</div>
+
+<button type="button" class="clear-cart-btn" onclick="clearCart()">
+    تفريغ السلة
+</button>
+
+        <button type="button" onclick="checkout()">
+            إتمام الطلب عبر WhatsApp
+        </button>
+    </div>
+
+</section>
+
+<script src="cart.js"></script>
+
+</body>
+
+</html>

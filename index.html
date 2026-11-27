@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAZARO | Classic Elegance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <header> 
+   <h1>MAZARO</h1>
+   
+
+<nav>
+    <a href="index.html">الرئيسية</a>
+    
+    <a href="#about">عن MAZARO</a>
+
+    <a href="#contact">تواصل معنا</a>
+
+    <button type="button" class="cart-toggle" onclick="toggleCart()">
+        🛒
+        <span id="cart-count">0</span>
+    </button>
+</nav>
+
+   </header>
+     <section id="home">
+     <h2>MAZARO</h2>
+     <p>أناقة كلاسيكية ... بأسلوبك الخاص</p>
+   </section>
+<section id="collections">
+
+    <h2>OUR COLLECTIONS</h2>
+    <p class="arabic-subtitle">مجموعات MAZARO</p>
+
+    <div class="collection-card">
+
+        <h3>MAZARO CLASSIC</h3>
+        <p class="arabic-title">مازرو كلاسيك</p>
+
+        <p>Timeless Elegance</p>
+        <p class="arabic-subtitle">أناقة خالدة</p>
+
+        <a href="classic.html">
+    اكتشف المجموعة
+</a>
+
+    </div>
+
+    <div class="collection-card">
+
+        <h3>MAZARO SIGNATURE</h3>
+        <p class="arabic-title">مازرو سيجنتشر</p>
+
+        <p>Designed to Stand Out</p>
+        <p class="arabic-subtitle">تصميم يلفت الأنظار</p>
+
+        <a href="signature.html">
+    اكتشف المجموعة
+</a>
+
+    </div>
+
+</section>
+ 
+   <section id="about">
+     <h2>عن MAZARO </h2>
+     <p>MAZARO علامة تهتم بالأناقة والتفاصيل وجودة التصميم </p>
+   </section>
+   <section id="contact">
+     <h2>تواصل معنا</h2>
+     <p>يسعدنا إستقبال طلباتكم واستفساراتكم </p>
+      <a href="https://wa.me/201016456011"
+       target="_blank">
+        تواصل عبر WhatsApp
+    </a>
+   </section>
+   <footer>
+     <p>© 2026 MAZARO. All Reserved</p>
+   </footer>
+   
+<div id="cart-overlay" onclick="toggleCart()"></div>
+
+<section id="cart" class="cart-drawer">
+
+    <div class="cart-header">
+        <div>
+            <h2>YOUR BAG</h2>
+            <p>حقيبة مشترياتك من MAZARO</p>
+        </div>
+
+        <button type="button" onclick="toggleCart()">✕</button>
+    </div>
+
+    <div class="cart-table-wrapper">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>المنتج</th>
+                    <th>المقاس</th>
+                    <th>السعر</th>
+                    <th>الكمية</th>
+                    <th>الإجمالي</th>
+                    <th>حذف</th>
+                </tr>
+            </thead>
+
+            <tbody id="cart-items">
+                <tr>
+                    <td colspan="6">حقيبتك فارغة حالياً</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+<div class="cart-summary">
+    <p>إجمالي الطلب</p>
+    <h2><span id="cart-total">0</span> EGP</h2>
+
+    <div class="customer-details">
+        <input type="text" id="customer-name"
+        placeholder="الاسم بالكامل">
+
+        <input type="tel" id="customer-phone"
+        placeholder="رقم الهاتف">
+
+        <input type="text" id="customer-address"
+        placeholder="العنوان بالتفصيل">
+
+        <textarea id="customer-notes"
+        placeholder="ملاحظات إضافية (اختياري)"></textarea>
+    </div>
+
+<button type="button" class="clear-cart-btn" onclick="clearCart()">
+    تفريغ السلة
+</button>
+
+    <button type="button" onclick="checkout()">
+        إتمام الطلب عبر WhatsApp
+    </button>
+</div>
+
+</section>
+<script src="cart.js"></script>
+</body>
+</html>
